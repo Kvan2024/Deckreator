@@ -1,0 +1,11 @@
+User Stories:
+
+As a non-authenticated user, I can view the top cards in decks on the main page.
+As a non-authenticated user, I can search for a card via the 'All Search' button in the navigation.
+As an authenticated user, I can view all the decks I am an owner of with the 'View' button in navigation.
+As an authenticated user, I can create a new deck with the 'Create' button in navigation.
+As an authenticated user, I can view the details of each deck by clicking on the deck from the list of decks I own.
+As an authenticated user, I can search for cards to add to my deck while viewing the deck details.
+As an authenticated user, I can add cards to my deck, from the search within my deck details.
+As an authenticated user, I can view all the cards in my deck on the deck details page.
+As an authenticated user, I can add and delete cards from my deck using the add and delete buttons beneath them in my deck details page. 
