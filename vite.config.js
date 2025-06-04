@@ -6,12 +6,12 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     proxy: {
-      '/api': 'http://localhost:8080',
-      '/auth': 'http://localhost:8080',
-      '/auth/login': 'http://localhost:8080',
-      '/register': 'http://localhost:8080',
-      '/cards': 'http://localhost:8080',
-      '/cards/search': 'http://localhost:8080',
+      '/api': 'http://deckreator.netlify.app',
+      '/auth': 'http://deckreator.netlify.app',
+      '/auth/login': 'http://deckreator.netlify.app',
+      '/register': 'http://deckreator.netlify.app',
+      '/cards': 'http://deckreator.netlify.app',
+      '/cards/search': 'http://deckreator.netlify.app',
     }
   }
 })
