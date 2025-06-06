@@ -6,4 +6,4 @@ COPY . .
 
 RUN ./mvnw clean package
 
-CMD ["java", "-jar", "target/deckreator-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/module-03-final-project-1.0.jar"]
