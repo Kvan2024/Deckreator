@@ -1,14 +1,12 @@
 services:
   - type: web
     name: deckreator-backend
-    env: java
+    env: docker
     rootDir: backend
-    buildCommand: ./mvnw clean package
-    startCommand: java -jar target/deckreator-0.0.1-SNAPSHOT.jar
 
   - type: web
     name: deckreator-frontend
     env: node
     rootDir: frontend
     buildCommand: npm install && npm run build
-    staticPublishPath: dist
+    startCommand: npm run preview
