@@ -23,7 +23,7 @@ import org.springframework.web.server.ResponseStatusException;
  */
 @RestController
 @CrossOrigin(
-        origins = {"http://localhost:5173", "https://your-app.netlify.app"},
+        origins = {"https://deckreator.netlify.app"},
         allowCredentials = "true"
 )
 public class AuthenticationController {

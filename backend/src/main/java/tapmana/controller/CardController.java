@@ -9,7 +9,7 @@ import tapmana.model.Card;
 import java.util.List;
 
 @CrossOrigin(
-        origins = {"https://your-app.netlify.app"},
+        origins = {"https://deckreator.netlify.app"},
         allowCredentials = "true"
 )
 @RestController
