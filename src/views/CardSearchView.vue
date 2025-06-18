@@ -48,7 +48,7 @@ export default {
         return;
       }
 
-      let url = "/cards/search?";
+      let url = "https://deckreator.onrender.com/cards/search?";
         if (this.searchType === "name") {
           url += `name=${encodeURIComponent(this.searchText)}`;
         } else if (this.searchType === "type") {
