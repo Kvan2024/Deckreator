@@ -15,6 +15,10 @@ import org.springframework.web.server.ResponseStatusException;
 import java.security.Principal;
 import java.util.List;
 
+@CrossOrigin(
+        origins = {"https://your-app.netlify.app"},
+        allowCredentials = "true"
+)
 @RestController
 @RequestMapping(path = "/users/{user}/decks")
 public class DeckController {

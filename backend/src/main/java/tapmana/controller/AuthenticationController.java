@@ -22,7 +22,10 @@ import org.springframework.web.server.ResponseStatusException;
  * through dependency injection.
  */
 @RestController
-@CrossOrigin
+@CrossOrigin(
+        origins = {"http://localhost:5173", "https://your-app.netlify.app"},
+        allowCredentials = "true"
+)
 public class AuthenticationController {
 
     private final TokenProvider tokenProvider;

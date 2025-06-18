@@ -8,6 +8,10 @@ import tapmana.model.Card;
 
 import java.util.List;
 
+@CrossOrigin(
+        origins = {"https://your-app.netlify.app"},
+        allowCredentials = "true"
+)
 @RestController
 @RequestMapping(path = "/cards")
 public class CardController {
