@@ -22,7 +22,7 @@ import org.springframework.web.server.ResponseStatusException;
  * through dependency injection.
  */
 @RestController
-@RequestMapping(path = "https://deckreator.netlify.app")
+@RequestMapping(path = "https://deckreator.onrender.com")
 @CrossOrigin(
         origins = {"https://deckreator.netlify.app"},
         allowCredentials = "true"

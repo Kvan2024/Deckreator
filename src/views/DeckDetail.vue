@@ -89,7 +89,7 @@
       const token = localStorage.getItem('token');
   
       try {
-        const response = await axios.get(`http://localhost:8080/users/${user}/decks/${id}`, {
+        const response = await axios.get(`https://deckreator.onrender.com/users/${user}/decks/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -145,7 +145,7 @@
 
     try {
       const response = await axios.put(
-        `http://localhost:8080/users/${user}/decks/${id}`,
+        `https://deckreator.onrender.com/users/${user}/decks/${id}`,
         {
           name: this.deckDetailsForm.name,
           description: this.deckDetailsForm.details
@@ -170,7 +170,7 @@
       const token = localStorage.getItem('token');
 
       try {
-        await axios.delete(`http://localhost:8080/users/${user}/decks/${id}`, {
+        await axios.delete(`https://deckreator.onrender.com/users/${user}/decks/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -189,7 +189,7 @@
     const token = localStorage.getItem('token');
 
     try {
-      const response = await axios.get(`http://localhost:8080/users/${user}/decks/${id}`, {
+      const response = await axios.get(`https://deckreator.onrender.com/users/${user}/decks/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -205,7 +205,7 @@
     const token = localStorage.getItem('token');
 
     try {
-      await axios.post(`http://localhost:8080/users/${user}/decks/${id}`, {
+      await axios.post(`https://deckreator.onrender.com/users/${user}/decks/${id}`, {
         multiverseId: card.multiverseId, cardName: card.cardName }, {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -223,7 +223,7 @@
     const cardId = card.multiverseId;
     
     try {
-      await axios.delete(`http://localhost:8080/users/${user}/decks/${id}/${cardId}`, {
+      await axios.delete(`https://deckreator.onrender.com/users/${user}/decks/${id}/${cardId}`, {
             headers: {
                 Authorization: `Bearer ${token}`
           }

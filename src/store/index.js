@@ -27,7 +27,7 @@ export function createStore() {
   },
   actions: {
     async loginUser({ commit }, credentials) {
-        const response = await axios.post('http://localhost:8080/auth/login', credentials);
+        const response = await axios.post('https://deckreator.onrender.com/auth/login', credentials);
         const token = response.data.token;
         const username = response.data.user.username;
       
@@ -35,7 +35,7 @@ export function createStore() {
       },
   
     async registerUser(_, userData) {
-      await axios.post('http://localhost:8080/register', userData);
+      await axios.post('https://deckreator.onrender.com/register', userData);
     },
   
     logout({ commit }) {

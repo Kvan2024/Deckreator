@@ -31,7 +31,7 @@ export default {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:8080/users/${this.username}/decks`, {
+      const response = await axios.get(`https://deckreator.onrender.com/users/${this.username}/decks`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
