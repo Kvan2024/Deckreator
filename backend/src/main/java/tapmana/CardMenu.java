@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class CardMenu {
     public static final RestClient REST_CLIENT = RestClient.create();
     private static Scanner userInput = new Scanner(System.in);
-    private final String BASE_URL = "http://localhost:8080/cards/search?";
+    private final String BASE_URL = "https://deckreator.onrender.com/search?";
 
     public static void cardMenu() {
 
@@ -45,7 +45,7 @@ public class CardMenu {
         if (cardName.equalsIgnoreCase("Back") || cardName.equalsIgnoreCase("B")) {
             cardMenu();
         }
-        String url = "http://localhost:8080/search?name=" + cardName;
+        String url = "https://deckreator.onrender.com/search?name=" + cardName;
         List<Card> searchResults = REST_CLIENT.get()
                 .uri(url)
                 .retrieve()
@@ -69,7 +69,7 @@ public class CardMenu {
         }
         else {
             cardNumber = searchResults.get(cardNumber - 1).getMultiverseId();
-            String cardurl = "http://localhost:8080/search/" + cardNumber;
+            String cardurl = "https://deckreator.onrender.com/search/" + cardNumber;
             Card searchedCard = REST_CLIENT.get()
                     .uri(cardurl)
                     .retrieve()
