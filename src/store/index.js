@@ -35,7 +35,7 @@ export function createStore() {
       },
   
     async registerUser(_, userData) {
-      await axios.post('https://deckreator.onrender.com/register', userData);
+      await axios.post('https://deckreator.onrender.com/auth/register', userData);
     },
   
     logout({ commit }) {
