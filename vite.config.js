@@ -8,8 +8,6 @@ export default defineConfig({
     proxy: {
       '/api': 'https://deckreator.onrender.com',
       '/auth': 'https://deckreator.onrender.com',
-      '/auth/login': 'https://deckreator.onrender.com',
-      '/register': 'https://deckreator.onrender.com',
       '/cards': 'https://deckreator.onrender.com',
       '/cards/search': 'https://deckreator.onrender.com',
     }
